@@ -10,7 +10,7 @@ export default [
         id: 2,
         title: "Event coordinator",
         company: "Concordia Design",
-        desc: "As an event coordinator at Concordia Design venue, my main responsibility was to ensure that each event was planned and executed flawlessly, aligned with the unique needs and vision of each client. I also coordinated logistics, and worked closely with on-site staff to ensure that every detail was attended to. Through my work, I helped to create unforgettable experiences for attendees and build lasting relationships with clients, cementing Concordia Design's reputation as a premier event destination.",
+        desc: "At Concordia Design venue, my main responsibility was to ensure that each event was planned and executed flawlessly, aligned with the unique needs and vision of each client. I also coordinated logistics, and worked closely with on-site staff to ensure that every detail was attended to. Through my work, I helped to create unforgettable experiences for attendees and build lasting relationships with clients, cementing Concordia Design's reputation as a premier event destination in Wrocław.",
         img: "/concordia-kolaz.png"
     },
  

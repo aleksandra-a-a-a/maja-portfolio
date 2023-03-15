@@ -1,40 +1,38 @@
-
 body {
   box-sizing: border-box;
   background-color: #f8f7f5;
-  background-image: url('/public/noise.png');
-  font-family: 'Playfair Display', serif;
+  background-image: url("/public/noise.png");
+  font-family: "Playfair Display", serif;
   max-width: 100%;
-  height: auto;
   color: rgb(74, 63, 63);
   scroll-behavior: smooth;
+  overflow: auto;
+  cursor: url(/Users/ola/maja-portfolio/public/cursor.png), auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.logo {
-  width: 12rem;
-  margin: 2rem;
-}
-
+/* Navbar  */
 .navbar {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
-  max-width: 70vw;
+  max-width: 100vw;
+  margin: auto;
   height: auto;
-  margin:auto;
-  padding-bottom: 6rem;
+  padding-bottom: 2rem;
 }
 
 ul {
   list-style: none;
   display: flex;
-  margin-right: 2rem;
   font-size: 1.3rem;
 }
 
 li {
-  margin: 5px;
+  margin-right: 7px;
   cursor: pointer;
   transition: 700ms ease;
 }
@@ -51,93 +49,121 @@ li:hover,
 .cont--title:hover {
   font-weight: 800;
   transition: 700ms ease;
-  
-}
-.profile--img {
-  width: 16rem;
-  transform: rotate(-6deg);
-  margin-left: 4rem;
 }
 
+/* About me */
 .about--me {
+  max-width: 90%;
+  max-height: 100vh;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  text-align: justify;
   display: flex;
-  align-self: center;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 80%;
-  margin: auto;
-  margin-bottom: 10rem;
-}
-
-.about--me--desc {
-  width: 40%;
-  min-width: 250px;
-  line-height: 1.2;
-}
-
-.contact--cont {
-  max-width: 80vw;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.contact--cont {
-  justify-content: space-around;
-}
-.contact--cont p {
-  width: 30vw
-}
-
-.linkedin {
-  color:rgb(74, 63, 63);
-}
-.stroke2 {
-  width: 40%;
-  max-width: 20rem;
-}
-
-.digital--card,
-.promo--card,
-.intern--card {
-  width: 25rem;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  background-color: #e4ddddb3;
-  padding: 1rem;
-  border-radius: 20px;
-  margin-bottom: 1rem;
-}
-
-.collage {
-  max-width: 25vw;
-}
-
-
-.digital--card p,
-.promo--card p,
-.intern--card p {
-  max-width: 20rem;
-}
-
-.experience--cont {
-  /* display: flex;
-  flex-wrap: wrap;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   align-items: center;
-*/ }
+  margin: 3rem 5rem;
+}
+
+.about--me p {
+  max-width: 30rem;
+  text-shadow: 2px 2px #ffffff;
+}
+
+.hello {
+  font-size: 32px;
+}
+
+.collage--main {
+  max-width: 22.5rem;
+  height: auto;
+}
+
+/* Contact  */
+.contact--cont {
+  max-width: 75vw;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.2rem;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding-top: 4rem;
+}
+
+.contact--cont p {
+  width: 20rem;
+  text-shadow: 2px 2px #ffffff;
+}
+
+a {
+  color: rgb(74, 63, 63);
+}
+
+.collage--contact {
+  max-width: 22rem;
+}
+
+/* Experience  */
+.collage {
+  width: 20rem;
+}
+
+.exp--cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 .digital--exp,
 .promo--exp,
 .intern--exp {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
-  margin-bottom: 3rem;
+  flex-wrap: wrap;
+  margin-bottom: 7rem;
 }
 
-.cont--title {
-  text-align: center;
+.exp--title {
   font-size: 2rem;
 }
+
+.dig--box,
+.promo--box,
+.intern--box {
+  max-width: 22rem;
+  margin: 1rem;
+  justify-content: center;
+}
+
+.dig--box p,
+.promo--box p,
+.intern--box p {
+  line-height: 2;
+  font-size: 1.1rem;
+  text-align: justify;
+  max-width: 20rem;
+  text-shadow: 2px 2px #ffffff;
+}
+
+/* Skills */
+.skill--box {
+  max-width: 20rem;
+  padding: 1rem;
+}
+.skill--box p {
+  text-align: justify;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  text-shadow: 2px 2px #ffffff;
+}
+.skills--cont {
+  padding-top: 3rem;
+  margin: auto;
+  max-width: 60rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+

@@ -1,15 +1,27 @@
-import promoData from "../promoData"
+
+import { useState } from 'react'
 
 export default function Promo(props) {
 
         const { title, company, desc, img } = props.expPromo
+        const [isHovering, setIsHovering] = useState(false);
+
+        const handleMouseOver = () => {
+            setIsHovering(true);
+  };
+
+        const handleMouseOut = () => {
+            setIsHovering(false);
+  };
+
         
     return (
-            
-                    <div className='promo--card'>
+                    <div onMouseOver={handleMouseOver}
+                        onMouseOut={handleMouseOut}
+                        className='promo--box'>
                         <h3><i>{ title }</i> • { company }</h3> 
-                        <img className='collage' src={ img }/>
-                        <p>{ desc }</p>        
+                        <img alt="" className='collage' src={ img }/>
+                        {isHovering && (<p>{ desc }</p> )}       
                     </div>
         
     )
